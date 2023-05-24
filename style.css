@@ -24,6 +24,8 @@
     --open-sans: 'Open sans';
     --montserrat: 'Montserrat';
     --azul: #0872BF;
+    --border: linear-gradient(to right, rgba(11, 70, 124, 0.77), rgba(55, 83, 108, 0.24));
+    --card-color: #222;
 }
 
 body {
@@ -213,7 +215,7 @@ section .foto img {
     padding: 1rem;
     box-sizing: border-box;
     border: 3px solid;
-    border-image: linear-gradient( #3acfd5 0%, #3a4ed5 100%) 1;
-    border-radius: 42px;
+    border-image: linear-gradient(rgba(11, 70, 124, 0.77), rgba(55, 83, 108, 0.24)) 1;
+    border-radius: 45px;
 }
 
