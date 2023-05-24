@@ -1,0 +1,219 @@
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+/* Inter */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+
+
+
+/* normalize */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: var(--open-sans);
+    box-sizing: border-box;
+}
+
+:root {
+    --open-sans: 'Open sans';
+    --montserrat: 'Montserrat';
+    --azul: #0872BF;
+}
+
+body {
+    background-color: #141A1A;
+}
+
+header {
+    margin-top: 15px;
+    padding: 2rem 3rem;
+    padding-right: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    margin-left: 10px;
+    }
+
+header .navbar {
+    display: flex;
+    gap: 65px;
+    font-family: var(--open-sans);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+header .navbar a {
+    color: white;
+}
+
+header .navbar .home {
+    color: #0872BF
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    gap: 100px;
+}
+
+section .presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+section .foto {
+    width: 50%;
+}
+
+section .foto img {
+    max-width: 100%;
+    /* height: auto; */
+}
+
+/* hello blanco */
+.arriba h3 {
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+/* i'm azul */
+.arriba h3 span {
+    color: var(--azul);
+}
+
+
+.arriba {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.arriba p {
+    font-family: var(--open-sans);
+    color: white;
+    font-size: 23px;
+    font-weight: 300px;
+    line-height: 149.18%;
+    text-align: justify;
+    color: #FFFFFF;
+    max-width: 75%;
+}
+
+.button {
+    margin-top: 1.87rem;
+    font-family: var(--open-sans) ;
+    color: white;
+    text-align: center;
+    background: linear-gradient(90deg, #0872BF 0%, #0D92AF 100%);
+    box-shadow: 0px 5px 4px rgba(197, 216, 110, 0.176);
+    border: solid 3px #0872BF;
+    padding: 7px 0;
+    width: 10rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.redes {
+    display: flex;
+    margin-top: 1.87rem;;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes p{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.Space {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 0.62rem;
+}
+
+/* my services */
+.Space h2{
+    font-family: var(--montserrat);
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+
+/* what i do */
+.Space h1 {
+    font-size: 40px;
+    color: #0872BF;
+    font-family: 'Inter';
+}
+
+
+.container-cards {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    margin-top: 6.25rem;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    justify-content: center;
+    
+}
+
+
+.container-cards .cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    gap: 30px;
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-image: linear-gradient( #3acfd5 0%, #3a4ed5 100%) 1;
+    border-radius: 42px;
+}
+
