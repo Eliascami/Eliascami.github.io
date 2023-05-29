@@ -410,7 +410,7 @@ section .foto img {
     border: 4px solid rgba(39, 31, 147, 0.379) ;
     border-radius: 45px;
     cursor: pointer;
-    /* position: relative; */
+    position: relative;
 }
 
 .carrousel .puntos {
@@ -434,6 +434,11 @@ section .foto img {
     border-radius: 100%;
     list-style-type: none;
     box-shadow: -2px -2px 0px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.punto:hover {
+    box-shadow: 1px -1px 5px 1px #0873bf;
 }
 
 .carrousel .punto.activo {
@@ -444,13 +449,150 @@ section .foto img {
 
 
 
-
-
-.testimonio svg {
-    
+.testimonio img {
     position: absolute;
-    left: 47.6%;
-    bottom: 90%;
-
+    width: 50%;
+    left: 26%;
+    bottom: 87%;
 }
 
+.testimonio .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    padding-top: 5rem;
+    gap: 1rem;
+}
+
+.testimonio .texto p {
+    font-family: var(--open-sans);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 2.188rem;
+    text-align: justify;
+}
+
+
+.testimonio .nombreTitulo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 25%; /* Mitad de la altura del padre */
+    padding: 3rem;
+}
+
+.testimonio .nombreTitulo h1 {
+    color: #0872BF;
+    font-family: 'poppins';
+}
+
+.footer {
+    display:flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    font-weight: 175;
+}
+
+.footer .arribaFooter {
+    margin-left: 5rem;
+}
+
+.footer .cuerpoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer .cuerpoFooter .cuerpo1 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    gap: 8rem;
+}
+
+.footer .cuerpoFooter .cuerpo1 .column1 {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    height: 100%;
+    gap: 1rem;
+}
+
+.footer .cuerpoFooter .cuerpo1 .column2 {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    height: 100%;
+    gap: 1rem;
+}
+
+.footer .cuerpo2 {
+    
+    display: flex;
+    align-items: center;
+    padding-right: 25rem;
+    flex-direction: column;
+    padding-left: 5rem;
+    gap: 2rem;
+    width: 50%;
+    
+}
+
+.cuerpo2 .cuerpoDosGeneral {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.cuerpo2 .mail {
+    position: relative;
+    height: 3rem;
+    width: 16rem;
+    padding-left: 1rem;
+}
+
+
+.cuerpo2 .mail input {
+    height: 3.8rem;
+    width: 16rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2B2E3C;
+    padding-left: 1rem;
+}
+
+.cuerpo2 .mail .button {
+    position: absolute;
+    font-size: 15px;
+    left: 80%;
+    top: 9%;
+    font-weight: 600;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0873bf;
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+.copy i{
+    cursor: pointer;
+}
